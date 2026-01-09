@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    {% if config.webdev %}
+    <meta http-equiv="refresh" content="3">
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>{{ config.mail_domain }} {{ pagename }}</title>
+    <link rel="stylesheet" href="./cyberpunk.css">
+    <link rel="icon" href="/logo.svg">
+    <link rel=”mask-icon” href=”/logo.svg” color=”#000000">
+</head>
+<body>
+{{ markdown_html }}
+
+</body>
+</html>
