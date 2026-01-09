@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', 'Fira Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+  line-height: 1.5;
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+  color: #e0e0e0;
+  background: #121212;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #f0f0f0;
+  margin-bottom: 12px;
+  margin-top: 24px;
+  font-weight: 600;
+  text-shadow:
+    0 0 6px rgba(135, 206, 250, 0.2),
+    0 0 12px rgba(135, 206, 250, 0.12),
+    0 0 20px rgba(135, 206, 250, 0.08);
+  letter-spacing: -0.02em;
+  border-bottom: 1px solid rgba(100, 100, 140, 0.1);
+  padding-bottom: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: #5da3e0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+  background: #2a2a2a;
+  padding: 2.5px 5px;
+  border-radius: 6px;
+}
+
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#menu li {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+#domain {
+  margin-left: auto;
+}
+
+#domain a {
+  color: #888;
+}
+
+.banner {
+  width: 100%;
+}
+
+.experimental {
+  margin: 3em 0;
+  padding: 1em;
+  border: 4px dashed #ff6b6b;
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+.cta-button, .cta-button:hover, .cta-button:visited {
+    border: 1.5px solid #4a5a63;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px 0;
+
+    background: linear-gradient(120deg, #3a4a53, #1e2a32);
+    color: white !important;
+    font-weight: bold;
+}
