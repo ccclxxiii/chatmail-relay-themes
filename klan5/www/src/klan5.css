@@ -1,0 +1,186 @@
+/* ===== klan5/tribe/clan inspired theme ===== */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+  line-height: 1.4;
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+  color: #e0d6c8; /* warm off-white for readability in low light */
+  background: #120f15; /* deep charcoal, like night soil */
+  background-image:
+    radial-gradient(circle at 30% 70%, rgba(30, 15, 20, 0.3) 0%, transparent 20%),
+    radial-gradient(circle at 70% 30%, rgba(20, 10, 25, 0.2) 0%, transparent 20%);
+  /* opt: subtle starry overlay? */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #f9e7d0; /* soft cream, like fire-glowed skin */
+  margin-bottom: 12px;
+  margin-top: 24px;
+  font-weight: 600;
+  text-shadow: 0 0 6px rgba(255, 200, 150, 0.3);
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-top: 0;
+  letter-spacing: 0.5px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffcc80; /* amber glow — firelight accent */
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffd790; /* brighter amber on hover */
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+code {
+  background: rgba(40, 30, 40, 0.6); /* dark slate with transparency */
+  padding: 2.5px 5px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 200, 150, 0.2);
+  color: #ffebcc;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 12px;
+  margin-bottom: 1.5em;
+  background: rgba(20, 15, 25, 0.7);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 200, 150, 0.1);
+}
+
+#menu li {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+#domain {
+  margin-left: auto;
+}
+
+#domain a {
+  color: #b8a090; /* muted copper */
+  font-size: 0.9em;
+}
+
+.banner {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 1em 0;
+  position: relative;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(255, 180, 100, 0.2);
+  border: 2px solid rgba(255, 180, 100, 0.3);
+  background: linear-gradient(135deg, rgba(20, 10, 25, 0.7), rgba(30, 15, 30, 0.7));
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(1.05) contrast(1.1) saturate(1.05);
+  transition: transform 0.4s ease;
+}
+
+.banner:hover img {
+  transform: scale(1.02);
+}
+
+/* opt: add a subtle fire-glow overlay on top of the image */
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 70%, rgba(255, 120, 60, 0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* if you want to add a soft vignette effect */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 30%, rgba(0, 0, 0, 0.6) 90%);
+  pointer-events: none;
+}
+.experimental {
+  margin: 3em 0;
+  padding: 1em;
+  border: 4px dashed #ff6b6b; /* Warm coral — caution but not harsh */
+  color: #ff6b6b;
+  font-weight: bold;
+  background: rgba(255, 107, 107, 0.1);
+  border-radius: 8px;
+}
+
+.cta-button,
+.cta-button:hover,
+.cta-button:visited {
+  border: 1.5px solid #a4c2d0;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px 0;
+  background: linear-gradient(120deg, #77888f, #364e59);
+  color: white !important;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(120deg, #8aa0a8, #4a606a);
+}
+
+/* opt: add a flickering fire glow effect to buttons or headers */
+@keyframes fireGlow {
+  0% { text-shadow: 0 0 6px rgba(255, 200, 150, 0.3); }
+  50% { text-shadow: 0 0 10px rgba(255, 180, 120, 0.5); }
+  100% { text-shadow: 0 0 6px rgba(255, 200, 150, 0.3); }
+}
+
+h1, h2, h3 {
+  animation: fireGlow 4s infinite ease-in-out;
+}
+
+/* subtle texture for body (optional) */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgo8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJub25lIiBzdHJva2U9IiMxMjBmMTUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLW9wYWNpdHk9IjAuMDUiIGRhc2hhcnJheT0iNSw1IiAvPgo8L3N2Zz4=') repeat;
+  pointer-events: none;
+  z-index: -1;
+}
