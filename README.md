@@ -14,3 +14,8 @@ by default chatmail relays have a standard template which works fine, but it can
 - 31337 from [https://31337.chat](https://31337.chat) relay
 - sombras from [https://sombras.chat](https://sombras.chat) relay
 - ??? `make a pr, add yours here!`
+
+##### tip the waiter
+- xmr: `89dZcw5fr1M85igdWrGMMEQY7qUZY7xSiAsAKe4KCee6HDudb51Y2kvWJihXbygZCj9CrhU1Q9VrkJ9udtmoEHYxESkF8yr`
+
+ᴄᴄᴄʟxxɪɪɪ
